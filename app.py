@@ -8,7 +8,6 @@ if vc.isOpened(): # try to get the first frame
 else:
     rval = False
 
-
 while rval:
     cv2.imshow("preview", frame)
     rval, frame = vc.read()
