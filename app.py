@@ -26,7 +26,7 @@ while True:
         cv2.circle(frame, (center_x, center_y), 5, (0, 0, 255), -1)
         # Display the coordinates of the center
         coords_text = f"Center: ({center_x}, {center_y})"
-        cv2.putText(frame, coords_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        cv2.putText(frame, coords_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     cv2.imshow("Faces", frame)
     if cv2.waitKey(1) == ord("q"):
